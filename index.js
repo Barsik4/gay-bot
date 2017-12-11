@@ -1,19 +1,16 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-cosnt settings = require(./settings.json)
-// @shadowolf put the prefix and the bot token in here and create a .gitignore
-
-var prefix = "$"
+const settings = require(./settings.json);
 
 client.on('message', (message) => {
 
     // Commands
 
-    if (message.content.startsWith(prefix + 'trigger')) {
+    if (message.content.startsWith(settings.prefix + 'trigger')) {
       message.reply(':warning: G A Y R R I G E D :warning:');
     }
 
-    if (message.content.startsWith(prefix + 'WAKEup')) {
+    if (message.content.startsWith(settings.prefix + 'WAKEup')) {
       message.channel.send('WAKE UP');
     }
 
@@ -42,7 +39,7 @@ client.on('message', (message) => {
     if (message.content == 'ellis') {
       message.reply('a chill guy');
     }
-    
+
     if (message.content == 'loki') {
       message.channel.send('is gay');
     }
