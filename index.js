@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+cosnt settings = require(./settings.json)
+// @shadowolf put the prefix and the bot token in here and create a .gitignore
 
 var prefix = "$"
 
