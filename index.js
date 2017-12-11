@@ -1,90 +1,52 @@
-const Discord = require('discord.js'); 
-const bot = new Discord.Client();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
 var prefix = "$"
-bot.on('message', (message) => {
 
-    if(message.content.startsWith(prefix + 'trigger')) {
+client.on('message', (message) => {
+
+    if (message.content.startsWith(prefix + 'trigger')) {
         message.reply(':warning: G A Y R R I G E D :warning:');
     }
 
-});
-
-bot.on('message', (message) => {
-    
-    if(message.content == 'doom') {
+    if (message.content == 'doom') {
         message.reply('he gay for females :joy:');
-        }
-    
-    });
+    }
 
-    bot.on('message', (message) => {
-        
-        if(message.content == 'henry') {
-            message.channel.sendMessage('hm');
-            }
-        
-        });
+    if (message.content == 'henry') {
+        message.channel.send('hm');
+    }
 
-bot.on('message', (message) => {
-        
-    if(message.content == 'jexel') {
+    if (message.content == 'jexel') {
         message.reply('he meme :joy:');
-            }
-        
-        });
+    }
 
-bot.on('message', (message) => {
+    if (message.content == 'cand') {
+            message.reply('lovely person ^o^');
+    }
 
-    if(message.content == 'cand') {
-        message.reply('lovely person ^o^');
-           }
+    if (message.content == 'vex') {
+        message.reply('who me');
+    }
 
-        });
-        
-bot.on('message', (message) => {
-            
-        if(message.content == 'vex') {
-            message.reply('who me');
-            }
-            
-         });
+    if (message.content == 'ellis') {
+        message.reply('a chill guy');
+    }
 
-         bot.on('message', (message) => {
+    if (message.content.startsWith(prefix + 'WAKEup')) {
+        message.channel.send('WAKE UP');
+    }
 
-            if(message.content == 'ellis') {
-                message.reply('a chill guy');
-            }
+    if (message.content == 'loki') {
+        message.channel.send('is gay');
+    }
 
-        });
+    if (message.content == 'coco') {
+        message.channel.send('awe');
+    }
 
-        bot.on('message', (message) => {
-            
-                if(message.content.startsWith(prefix + 'WAKEup')) {
-                    message.channel.sendMessage('WAKE UP');
-                }
-            });
+    if (message.content == 'eudalca') {
+        message.channel.send('wants fully automated luxury gay space communism');
+    }
 
-            bot.on('message', (message) => {
-                
-                if(message.content == 'loki') {
-                    message.channel.sendMessage('is gay');
-                    }
-                
-                });
-
-                bot.on('message', (message) => {
-                    
-                    if(message.content == 'coco') {
-                        message.channel.sendMessage('awe');
-                        }
-                    
-                    });
-
-                    bot.on('message', (message) => {
-                        
-                        if(message.content == 'eudalca') {
-                            message.channel.sendMessage('wants fully automated luxury gay space communism');
-                            }
-                        
-                        });
+});
